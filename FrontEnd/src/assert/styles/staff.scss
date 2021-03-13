@@ -1,0 +1,148 @@
+.button-new-order {
+    top: 2%;
+}
+
+.form-create-bill {
+    position: absolute;
+    height: 80%;
+    top: 20%;
+    left: 40%;
+    transform: translate(-40%, -20%);
+    width: 80%;
+    background-color: rgba($color: white, $alpha: 0.9);
+}
+
+.card-title-name-table {
+    text-align: center;
+    font-weight: bold;
+    color: #848484;
+}
+
+.image-table {
+    &:hover {
+        cursor: pointer;
+    }
+
+    &.ready {
+        background-color: yellowgreen;
+    }
+
+    &.busy {
+        background-color: yellow;
+    }
+}
+
+.card-risotto {
+    width: 150px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: inline-block !important;
+}
+
+.wrap-grid {
+    overflow-y: scroll;
+
+    &.order {
+        height: 62vh;
+    }
+
+    &.foods {
+        height: 70vh;
+    }
+
+    &.table {
+        height: 37vh;
+    }
+
+    padding-top: 1%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    align-items: stretch;
+}
+
+.grid>article {
+    width: 90%;
+    height: 95%;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.grid>article img {
+    max-width: 100%;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.grid .text {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.button-back {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.grid-order-detail {
+    display: grid;
+    align-items: stretch;
+}
+
+.grid-order-detail>article {
+    margin-top: 15px;
+    width: 95%;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.grid-order-detail .text {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn-close-order {
+    width: 30px;
+    padding-top: 5px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.btn-add-food {
+    text-align: right;
+    margin-left: 55%;
+}
+
+.btn-submit-order {
+    margin-left: 23vh;
+    margin-top: 2%;
+    width: 30%;
+}
+
+.form-table-detail {
+    Label {
+        font-weight: bold;
+        color: #848484;
+    }
+}
+
+h2 {
+    padding-top: 2px;
+    text-align: center;
+}
+
+.wrap-table-list {
+    overflow-y: scroll;
+    height: 70vh;
+    text-align: center;
+}

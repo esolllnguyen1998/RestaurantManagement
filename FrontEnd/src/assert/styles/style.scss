@@ -1,0 +1,100 @@
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f8f9fa;
+    position: fixed;
+    height: 92%;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    padding-top: 10%;
+    font-weight: bold;
+}
+
+.sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    cursor: pointer;
+    background-color: #555;
+    color: white;
+}
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+.main-manage-staff {
+    padding-top: 1%;
+    margin-left: 205px
+}
+
+
+.tableFixHead {
+    overflow-y: scroll;
+    height: 55vh;
+
+    &.food-manage {
+        height: 40vh;
+    }
+
+    &.import-bill-manage {
+        height: 60vh;
+    }
+
+    &.staff-salary {
+        height: 35vh;
+    }
+}
+
+.tableFixHead thead th {
+    position: sticky;
+    top: 0;
+}
+
+.tableFixHead table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tableFixHead th,
+td {
+    padding: 8px 16px;
+}
+
+.tableFixHead th {
+    background: #5DADE2;
+}

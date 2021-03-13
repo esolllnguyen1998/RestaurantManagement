@@ -1,0 +1,162 @@
+.wrap-grid {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    margin-top: 2%;
+    margin: 2% 0% 0% 0%;
+
+    &.manage-staff {
+        height: 60vh;
+    }
+
+    &.manage-order {
+        margin-top: 0%;
+        height: 40vh;
+        box-shadow: none;
+    }
+}
+
+.dal-order-details {
+    display: grid;
+    align-items: stretch;
+}
+
+.modal-order-details>article {
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    width: 95%;
+    padding-left: 15px;
+    height: 30vh;
+}
+
+.modal-order-details .text {
+    text-align: center;
+    font-weight: bold;
+}
+.modal-order-details .form{
+    padding: 5% 5% 0% 0%;
+}
+
+.card {
+    &.staff-infor {
+        height: 11rem;
+        width: 13rem;
+        margin: 0% 0% 1% 1%;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &.active {
+        background-color: skyblue;
+    }
+}
+
+.form-group-staff {
+    width: 40%;
+
+    &.btn-edit-account {
+        text-align: center;
+    }
+
+    &.btn-add-staff {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.btn-add-saff {
+    width: 40%;
+}
+
+.button-edit-delete {
+    width: 100%;
+}
+
+.button-confirm-delete {
+    width: 100%;
+}
+
+Input {
+    position: unset !important;
+    width: 20px;
+}
+
+.icon-option {
+    &:hover {
+        cursor: pointer;
+    }
+
+    &.edit {
+        width: 25px;
+        height: 25px;
+        margin: 5% 0% 0% 2%
+    }
+
+    &.edit-food {
+        width: 25px;
+        height: 25px;
+        margin: 3% 0% 0% 2%
+    }
+
+    &.delete {
+        width: 50px;
+        margin-left: 60%;
+    }
+
+    &.image {
+        width: 25px;
+    }
+
+    &.select {
+        width: 70px;
+        margin-left: 60%;
+    }
+
+    &.details {
+        width: 45px;
+        background-color: transparent;
+    }
+
+}
+
+.row {
+    &.row-warp-option {
+        margin-left: 10%;
+    }
+}
+
+.title-alight-center {
+    text-align: center;
+    width: 100%;
+}
+
+.img-food {
+    width: 60vh;
+    margin-left: 13%;
+}
+
+.wrap-add-food {
+    width: 100%;
+    margin-left: 30vh;
+}
+
+.img-edit-food {
+    width: 100%;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.h1-margin-left {
+    margin-left: 30vh;
+}
+
+.date-picker {
+    width: 40%;
+}
+
+.wrap-date-picker {
+    margin: 0% 0% 0% 6%;
+}

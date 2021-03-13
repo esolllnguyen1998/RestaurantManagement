@@ -1,0 +1,101 @@
+Button {
+    font-weight: bold;
+}
+
+h4 {
+    text-align: center;
+    padding-top: 1%;
+}
+
+Label {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.wrap-grid {
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    &.chef {
+        height: 65vh;
+    }
+
+    margin-left: 10%;
+    padding-top: 1%;
+}
+
+.grid-order-details {
+    display: grid;
+    align-items: stretch;
+
+    Button {
+        margin-top: 14.5%;
+    }
+
+    .text {
+        padding: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    article {
+        margin: 15px 0px 0px 15px;
+        width: 95%;
+        padding-left: 15px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.grid-food-details {
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+
+    .text {
+        padding: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    article {
+        margin-top: 3%;
+        width: 90%;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+
+        img {
+            max-width: 100%;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.text-primary {
+    &.btn-import-bill {
+        font-weight: bold;
+        font-size: 23px;
+    }
+}
+
+.col-wrap-btn {
+    text-align: right;
+}
+
+.btn-back {
+    width: 40px;
+    margin-top: 5px;
+    margin-left: 5px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.btn-access-import-bill {
+    transform: translateX(23vh);
+    width: 33%;
+}
